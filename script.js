@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const formattedDate = formatDate(currentDate);
         const givenDate = `${day.value}/${month.value}/${year.value}`;
         const ageResult = calculateAge(givenDate, formattedDate);
-       age.innerHTML = `${ageResult.years} years <br>${ageResult.months} months<br> ${ageResult.days} days`;
+       age.innerHTML = `<div class="output-text"><hr><span class="output-number">${ageResult.years}</span> years <br><span class="output-number">${ageResult.months}</span> months<br> <span class="output-number">${ageResult.days}</span> days`;
     });
 
     function formatDate(date) {

@@ -1,10 +1,9 @@
 * {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
     background-color: hsl(0, 0%, 94%);
 }
 
@@ -12,41 +11,84 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    
-}
-
-.card {
-    border: 1px solid #ccc;
-    background-color: hsl(0, 0%, 100%);
-    padding: 0 20px;
-    
-}
-
-input {
-    font-size: 20px;
+    padding-top: 50px;   
+    padding-bottom: 50px;
 }
 
 hr {
-    margin-top: 30px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-top: 5px;
 }
 
-#submit {
+.line-color {
+    color: hsl(259, 100%, 65%);
+    font-weight: bold;
+}
+
+.card {
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 50px;  
+}
+
+label {
+    padding-left: 3px;
+}
+
+.input-container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+input {
+    border: 1px solid #ccc;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 7px;
+    width: 125px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.icon button {
+    position: relative;
+    top: 85px;
+    left:10px;
+    border: none;
+    background: none;
+    cursor: pointer;
     border-radius: 50%;
-    height: 55px;
-    width: 60px;
+    width: 80px;
+    height: 80px;
     background-color: hsl(259, 100%, 65%);
+}
+
+.icon button img {
+    width: 60%; 
+    height: 60%; 
 }
 
 
 #age {
-    margin-top: 20px;
-    font-size: 40px;
-    font-weight: 500;
-    font: bold;
-    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 50px;
 }
 
+.age-count {
+    line-height: 10px;
+}
 
 .error {
     border: 2px solid red;
@@ -55,4 +97,26 @@ hr {
 .disabled {
     cursor: not-allowed;
     background-color: gray;
+}
+
+.form {
+    display: flex;
+    padding-left: 50px;
+    gap: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.output-text {
+    font-weight: bold;
+    line-height: 90px;
+}
+
+.output-number {
+    color: hsl(259, 100%, 65%);
 }
