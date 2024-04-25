@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    
 }
 
 body {
@@ -10,23 +11,23 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-top: 50px;   
     padding-bottom: 50px;
 }
 
-hr {
-    display: block;
+.age-count hr {
+    position: relative;
+    right: 65px;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    width: 100%;
-    margin-top: 5px;
+    width: 30vw; 
+   
 }
 
 .line-color {
     color: hsl(259, 100%, 65%);
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .card {
@@ -36,34 +37,29 @@ hr {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 50px;  
+    border-bottom-right-radius: 50px; 
+    width: 40rem; 
+    
 }
 
 label {
     padding-left: 3px;
 }
 
-.input-container {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
-}
-
-input {
+.input-container input {
     border: 1px solid #ccc;
     font-size: 25px;
     height: 50px;
     border-radius: 7px;
     width: 125px;
-    font-weight: bold;
+    font-weight: 900;
     padding-left: 20px;
 }
 
 .icon button {
     position: relative;
-    top: 85px;
-    left:10px;
+    top: 5.2rem;
+    right: 1.4rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -81,7 +77,7 @@ input {
 
 #age {
     font-size: 80px;
-    font-weight: bold;
+    font-weight: 900;
     font-style: italic;
     padding-left: 50px;
 }
@@ -101,7 +97,6 @@ input {
 
 .form {
     display: flex;
-    padding-left: 50px;
     gap: 30px;
 }
 
@@ -120,3 +115,74 @@ input {
 .output-number {
     color: hsl(259, 100%, 65%);
 }
+
+    @media screen and (max-width: 600px) {
+
+        .container {
+            width: 40rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+
+        .card {
+            width: 35rem;
+        }
+    
+
+        .form input {
+            width: 125px;
+            font-weight: 900;
+            font-size: 1.3rem;
+        }
+
+        .input-container {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 50px;
+        }
+     
+        #age {
+            font-weight: 900;
+        }
+
+        .form {
+            gap: 30px;
+        }
+
+        .icon {
+            position: relative;
+            right: 17rem;
+            margin-top: 0.3rem;
+        }
+
+        .icon img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        hr {
+            max-width: 600px; 
+            margin-left:0;
+        }
+
+    }
+    @media screen and (max-width: 900px) {
+
+        .container {
+            width: 40rem;
+            padding: 3rem 0 0 5rem;
+        }
+
+        .card {
+            width: 43rem;
+        }
+
+        .icon {
+            padding-right: 5rem;
+        }
+        hr {
+            max-width: 500px; 
+            
+            
+        }
+    }
